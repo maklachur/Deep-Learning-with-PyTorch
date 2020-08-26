@@ -1,9 +1,9 @@
 # Deep-Learning-with-PyTorch
 
 #### Image classification by modifying pretrained model
-Classify CIFAR10 Dataset by modifying Resnet50 pretrained model
-The basic difference between the normally implemented model and modifide pretrained model:
-'''
+- Classify CIFAR10 Dataset by modifying Resnet50 pretrained model
+- The basic difference between the normally implemented model and modifide pretrained model:
+```
 #import pretrained model
 model=torchvision.models.resnet50(pretrained=True)
 
@@ -21,5 +21,4 @@ model.fc = nn.Sequential(nn.Linear(input_channel, 128),
 
 
 model = model.to(device) 
-
-'''
+```
